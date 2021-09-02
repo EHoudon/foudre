@@ -279,6 +279,7 @@ class MazePainter {
             this.ctx.fillStyle = color;
             this.ctx.fillRect(pos.col * this.scale, pos.row * this.scale, this.scale, this.scale);
         });
+        this.writeBreadth();
         this.drawWalls();
         if (this.lightningTimeStart > this.maze.height + this.maze.width) {
             clearInterval(ANIMATION_INTERVAL);
