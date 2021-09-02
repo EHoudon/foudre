@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>L'Algorithme de la foudre</title>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ychalier/pifekit/pifekit.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ychalier/pifekit/pifekit.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body class="dark-gold noise" style="position: relative">
+    <canvas id="canvas" width="100%" height="100%"></canvas>
+    <div class="card" style="position: fixed; bottom: .8rem; right: .8rem;">
+        <div class="card-footer">
+            <div class="form-group">
+                <label class="form-switch">
+                    <input type="checkbox" id="delay-lightning" />
+                    <i class="form-icon"></i> Délai avant l'éclair
+                </label>
+            </div>
+            <div class="form-group">
+                <label class="form-switch">
+                    <input type="checkbox" id="draw-walls" checked />
+                    <i class="form-icon"></i> Afficher les murs
+                </label>
+            </div>
+            <div class="form-group">
+                <label class="form-switch">
+                    <input type="checkbox" id="draw-breadth" />
+                    <i class="form-icon"></i> Afficher les distances
+                </label>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="input-speed">Visibilité de la frontière</label>
+                <input class="slider" type="range" min="1" max="9" value="5" id="input-frontier" />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="input-speed">Vitesse de l'animation</label>
+                <input class="slider" type="range" min="1" max="9" value="5" id="input-speed" />
+            </div>
+            <button class="btn btn-primary" id="btn-play">Pause</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="master.js"></script>
+</body>
+
+</html>
