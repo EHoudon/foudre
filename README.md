@@ -8,4 +8,4 @@ Une implémentation JavaScript de l'animation présentée dans la vidéo publié
 - Paramétrage de la visibilité de la frontière
 - Paramétrage de la vitesse de l'animation
 
-[Voici la démonstration.](https://ychalier.github.io/rlv/lightning/index.html)
+Voir la démonstration sur [https://ychalier-rlv.github.io/foudre/](https://ychalier-rlv.github.io/foudre/)
